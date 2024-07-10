@@ -1,0 +1,196 @@
+[
+    {
+        "back_flavor": "",
+        "back_text": "<b>Deck Size</b>: 30.\n<b>Trait Choice</b>: At deck creation, choose either <b>Spirit</b>, <b>Talent</b> or both traits.\n<b>Deckbuilding Options</b>: Seeker cards ([seeker]) level 0-5, Neutral cards level 0-5, cards of the chosen trait level 0-2 (level 0 if you have chosen both traits, instead).\n<b>Deckbuilding Requirements</b> (do not count toward deck size): Black Hanekawa, Kako, 1 random basic weakness.",
+        "code": "99902",
+        "deck_limit": 1,
+        "deck_options": [
+            {
+                "faction": [
+                    "seeker",
+                    "neutral"
+                ],
+                "level": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "faction": [
+                    "guardian"
+                ],
+                "level": {
+                    "min": 0,
+                    "max": 0
+                }
+            },
+            {
+                "name": "Traits",
+                "trait": [
+                    "spirit",
+                    "talent"
+                ],
+                "level": {
+                    "min": 0,
+                    "max": 2
+                },
+                "limit": 10
+            }
+        ],
+        "deck_requirements": "size:30, card:99910, card:99911, random:subtype:basicweakness",
+        "double_sided": true,
+        "faction_code": "seeker",
+        "health": 6,
+        "illustrator": "VOFAN",
+        "is_unique": true,
+        "name": "Tsubasa Hanekawa",
+        "pack_code": "kaip",
+        "position": 2,
+        "quantity": 1,
+        "sanity": 6,
+        "skill_agility": 1,
+        "skill_intellect": 5,
+        "skill_combat": 1,
+        "skill_willpower": 5,
+        "subname": "Possessed by a Cat Spirit",
+        "text": "[reaction] After 1 or more horror is placed on Tsubasa Hanekawa, take 1 horror: Discover 1 clue at your location. (Limit once per round.)\n[elder_sign] effect: +2. You may eihter take 1 direct horror, heal 1 horror or ready Black Hanekawa.",
+        "traits": "Drifter. Cursed.",
+        "type_code": "investigator"
+    },
+    {
+        "back_flavor": "",
+        "back_text": "<b>Deck Size</b>: 30.\n<b>Trait Choice</b>: At deck creation, choose 2 out of 3 traits: <b>Cursed</b>, <b>Trick</b> or <b>Tactic</b>.\n<b>Deckbuilding Options</b>: Rogue cards ([rogue]) level 0-5, Neutral cards level 0-5, up to 10 other cards of the chosen traits level 0-2.\n<b>Deckbuilding Requirements</b> (do not count toward deck size): Monkey Paw, Valhalla Combo, The Rainy Devil, 1 random basic weakness.",
+        "code": "99903",
+        "deck_limit": 1,
+        "deck_options": [
+            {
+                "faction": [
+                    "rogue",
+                    "neutral"
+                ],
+                "level": {
+                    "min": 0,
+                    "max": 5
+                }
+            },
+            {
+                "name": "Traits",
+                "trait": [
+                    "cursed",
+                    "tactic",
+                    "trick"
+                ],
+                "level": {
+                    "min": 0,
+                    "max": 2
+                },
+                "limit": 10,
+                "error": "You cannot have more than 10 cards of the chosen traits."
+            }
+        ],
+        "deck_requirements": "size:30, card:99912, card:99913, card:99914, random:subtype:basicweakness",
+        "double_sided": true,
+        "faction_code": "rogue",
+        "health": 8,
+        "illustrator": "VOFAN",
+        "is_unique": true,
+        "name": "Suruga Kanbaru",
+        "pack_code": "kaip",
+        "position": 3,
+        "quantity": 1,
+        "sanity": 6,
+        "skill_agility": 5,
+        "skill_intellect": 3,
+        "skill_combat": 2,
+        "skill_willpower": 2,
+        "subname": "The Underclassman",
+        "text": "Once per turn, you may evade an enemy not engaged with you at your location.\n[reaction] After you succeed at a skill test by 2 or more: Place 1 resource on Monkey Paw, as a wish. (Limit once per phase.)\n[elder_sign] effect: +2. Place 1 resource on Monkey Paw, as a wish.",
+        "traits": "Athlete. Cursed.",
+        "type_code": "investigator"
+    },
+    {
+        "code": "99910",
+        "cost": null,
+        "deck_limit": 1,
+        "faction_code": "neutral",
+        "illustrator": "VOFAN",
+        "is_unique": true,
+        "name": "Black Hanekawa",
+        "pack_code": "kaip",
+        "permanent": true,
+        "position": 10,
+        "quantity": 1,
+        "restrictions": "investigator:99902",
+        "subname": "",
+        "text": "Permanent. Tsubasa Hanekawa deck only.\nWhile Tsubasa Hanekawa has 3 or fewer remaining sanity, Black Hanekawa gains: “Switch the base values of your [intellect] and [combat]. Switch the base values of your [willpower] and [agility].\n[reaction] After you deal damage to an enemy by an attack, exhaust Black Hanekawa: <b>Energy Drain.</b> Either deal 1 additional damage or heal 1 horror.”",
+        "traits": "Cat. Conspirator.",
+        "type_code": "asset"
+    },
+    {
+        "code": "99911",
+        "cost": -2,
+        "deck_limit": 1,
+        "faction_code": "neutral",
+        "illustrator": "VOFAN",
+        "name": "Kako",
+        "pack_code": "kaip",
+        "position": 11,
+        "quantity": 1,
+        "restrictions": "investigator:99902",
+        "subtype_code": "weakness",
+        "text": "While Kako is in your hand, you cannot trigger [reaction] abilities.\nX is your remaining sanity.\nRemove Kako from the game.",
+        "traits": "Madness.",
+        "type_code": "event"
+    },
+    {
+        "code": "99912",
+        "cost": null,
+        "deck_limit": 1,
+        "faction_code": "neutral",
+        "illustrator": "VOFAN",
+        "is_unique": true,
+        "name": "Monkey Paw",
+        "pack_code": "kaip",
+        "permanent": true,
+        "position": 12,
+        "quantity": 1,
+        "restrictions": "investigator:99903",
+        "slot": "Hand",
+        "subname": "Granting “Wishes”",
+        "text": "Permanent. Suruga Kanbaru deck only. Limit 10 wishes on Monkey Paw.\n[reaction] After your turn begins, spend 3 wishes: Choose one of the following - Draw 2 cards, gain 3 resources or take an additional action during your turn.",
+        "traits": "Cursed. Relic.",
+        "type_code": "asset"
+    },
+    {
+        "code": "99913",
+        "cost": 0,
+        "deck_limit": 1,
+        "faction_code": "neutral",
+        "illustrator": "VOFAN",
+        "name": "Valhalla Combo",
+        "pack_code": "kaip",
+        "position": 13,
+        "quantity": 1,
+        "skill_agility": 2,
+        "skill_wild": 1,
+        "restrictions": "investigator:99903",
+        "text": "Suruga Kanbaru deck only.\nPlay only during your turn.\nTest [agility](0). For each point you succeed by, gain 1 resource, to a maximum of X resources. X is the number of wishes on Monkey Paw.",
+        "traits": "Trick.",
+        "type_code": "event"
+    },
+    {
+        "code": "99914",
+        "deck_limit": 1,
+        "faction_code": "neutral",
+        "illustrator": "tbrsnsk",
+        "name": "The Rainy Devil",
+        "pack_code": "kaip",
+        "position": 14,
+        "quantity": 1,
+        "restrictions": "investigator:99903",
+        "subtype_code": "weakness",
+        "text": "<b>Revelation - </b>If there are no wishes on Monkey Paw, shuffle The Rainy Devil back into your deck. Otherwise, for each wish on Monkey Paw, take 1 damage or 1 horror.",
+        "traits": "Curse.",
+        "type_code": "treachery"
+    }
+]

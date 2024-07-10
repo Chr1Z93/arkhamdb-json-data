@@ -1,5 +1,11 @@
 [
     {
+        "code": "kai",
+        "name": "Kaimonogatari",
+        "position": 0,
+        "size": 1
+    },
+    {
         "code": "core",
         "name": "Core",
         "position": 1,
